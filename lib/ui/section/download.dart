@@ -4,11 +4,11 @@ import 'package:functional_widget_annotation/functional_widget_annotation.dart';
 part 'download.g.dart';
 
 @swidget
-Widget _sectionDownloaded(BuildContext context) => Wrap(
+Widget _sectionDownloaded(BuildContext context) => const Wrap(
       runSpacing: 24,
       spacing: 64,
       alignment: WrapAlignment.center,
-      children: const [
+      children: [
         _Item(
           text: '450,000+',
           caption: 'total downloaded',

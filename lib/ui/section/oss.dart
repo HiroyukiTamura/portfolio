@@ -15,9 +15,9 @@ Widget _sectionOss({
   required bool singlePain,
 }) =>
     singlePain
-        ? Column(
+        ? const Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [
+            children: [
               _BlockFlutterHlsParser(),
               SizedBox(height: 64),
               _BlockDoubleTapPlayerView(),
@@ -28,9 +28,9 @@ Widget _sectionOss({
               constraints: const BoxConstraints(
                 maxWidth: Dimens.MaxWidthWorks,
               ),
-              child: Row(
+              child: const Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
+                children: [
                   Expanded(
                     child: _BlockFlutterHlsParser(),
                   ),

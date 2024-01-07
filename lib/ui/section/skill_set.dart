@@ -10,14 +10,14 @@ part 'skill_set.g.dart';
 Widget _sectionSkillSet(BuildContext context) => Center(
       child: ConstrainedBox(
         constraints: const BoxConstraints(maxWidth: Dimens.MaxWidthSkill),
-        child: Column(
+        child: const Column(
           children: [
-            const HeadLine4(text: 'skill set'),
-            const SizedBox(height: 32),
+            HeadLine4(text: 'skill set'),
+            SizedBox(height: 32),
             Wrap(
               spacing: 8,
               runSpacing: 8,
-              children: const [
+              children: [
                 SkillChipAndroid(),
                 SkillChipKotlin(),
                 SkillChipFlutter(),
